@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a SignUp Form</title>
+<style>
+    #register-form{
+        width: 300px;
+        background-color: rgba(238, 255, 0, 0.616);
+        padding: 24px;
+        /* margin-top: 10px; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .input-label{
+        margin: 0%;
+    }
+    .input-item{
+        width: 100%;
+    }
+    #terms-check{
+        margin-top: 12px;
+        margin-bottom: 18px;
+    }
+</style>
+
+</head>
+
+<body style="background-color: rgb(7, 188, 248);">
+    <h1 style="text-align: center;">SignUp</h1>
+    <form id="register-form">
+        
+        <div>
+           <p class="input-label"> Full name:</p>
+            <input type="full name" name="full name"><br>
+        </div>
+        <div>
+            <p class="input-label">Email: </p>
+            <input type="Email" name="Email">
+        </div>
+        <div>
+            <p class="input-label"> Password: </p>
+            <input type="Password" name="Password"><br>
+        </div>
+        <div>
+            <p class="input-label">  Confirm Password: </p>
+            <input type="Password" name="Password"><br>
+        </div>
+        <div>
+            <p class="input-label"> Gender: </p>
+            <input type="radio" name="male" value="male">Male</input>
+
+            <input type="radio" name="female" value="female">Female</input>
+
+            <input type="radio" name="other" value="other">other</input>
+        </div>
+        <div>
+            <p class="input-label"> Security Question: </p>
+            <select name="security-question">
+                <option value="first-pet-name">What was your first pet name?</option>
+                <option value="first-nick-name">What is your nick name?</option>
+                <option value="first-job">What was your first job?</option>
+            </select>
+        </div>
+
+        <div>
+            <textarea class="input-item" name="answer" cols="30" rows="6"></textarea>
+        </div>
+        <div>
+            <input id="terms-check" type="checkbox" name="terms-conditions">I accept with trms and conditions.</input>
+        </div>
+        
+            <input type="submit" value="Register">
+        
+    </form>
+
+</body>
+
+</html>
